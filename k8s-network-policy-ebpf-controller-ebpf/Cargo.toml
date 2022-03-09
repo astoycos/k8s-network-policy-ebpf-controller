@@ -6,6 +6,7 @@ edition = "2021"
 [dependencies]
 aya-bpf = { git = "http://github.com/aya-rs/aya", branch = "main" }
 k8s-network-policy-ebpf-controller-common = { path = "../k8s-network-policy-ebpf-controller-common" }
+memoffset = "0.6"
 
 [[bin]]
 name = "k8s-network-policy-ebpf-controller"
