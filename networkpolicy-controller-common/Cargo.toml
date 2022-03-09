@@ -1,5 +1,5 @@
 [package]
-name = "k8s-network-policy-ebpf-controller-common"
+name = "networkpolicy-controller-common"
 version = "0.1.0"
 edition = "2021"
 

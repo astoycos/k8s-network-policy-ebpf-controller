@@ -1,2 +1,2 @@
 [workspace]
-members = ["k8s-network-policy-ebpf-controller", "k8s-network-policy-ebpf-controller-common", "xtask"]
+members = ["networkpolicy-controller", "networkpolicy-controller-common", "xtask"]

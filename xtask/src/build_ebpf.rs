@@ -41,7 +41,7 @@ pub struct Options {
 }
 
 pub fn build_ebpf(opts: Options) -> Result<(), anyhow::Error> {
-    let dir = PathBuf::from("k8s-network-policy-ebpf-controller-ebpf");
+    let dir = PathBuf::from("networkpolicy-controller-ebpf");
     let target = format!("--target={}", opts.target);
     let args = vec![
         "+nightly",

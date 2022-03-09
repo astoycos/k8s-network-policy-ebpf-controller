@@ -1,17 +1,17 @@
 [package]
-name = "k8s-network-policy-ebpf-controller"
+name = "networkpolicy-controller"
 version = "0.1.0"
 edition = "2021"
 publish = false
 
 [dependencies]
 aya = { git = "https://github.com/aya-rs/aya", branch="main", features = ["async_tokio"] }
-k8s-network-policy-ebpf-controller-common = { path = "../k8s-network-policy-ebpf-controller-common", features=["user"] }
+networkpolicy-controller-common = { path = "../networkpolicy-controller-common", features=["user"] }
 anyhow = "1.0.42"
 bytes = "1"
 tokio = { version = "1.9.0", features = ["full"] }
 structopt = { version = "0.3" }
 
 [[bin]]
-name = "k8s-network-policy-ebpf-controller"
+name = "networkpolicy-controller"
 path = "src/main.rs"

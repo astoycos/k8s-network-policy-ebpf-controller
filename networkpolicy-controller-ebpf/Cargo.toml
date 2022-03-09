@@ -1,15 +1,15 @@
 [package]
-name = "k8s-network-policy-ebpf-controller-ebpf"
+name = "networkpolicy-controller-ebpf"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
 aya-bpf = { git = "http://github.com/aya-rs/aya", branch = "main" }
-k8s-network-policy-ebpf-controller-common = { path = "../k8s-network-policy-ebpf-controller-common" }
+networkpolicy-controller-common = { path = "../networkpolicy-controller-common" }
 memoffset = "0.6"
 
 [[bin]]
-name = "k8s-network-policy-ebpf-controller"
+name = "networkpolicy-controller"
 path = "src/main.rs"
 
 [profile.release]

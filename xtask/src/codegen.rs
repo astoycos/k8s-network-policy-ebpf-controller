@@ -6,7 +6,7 @@ use std::{
 };
 
 pub fn generate() -> Result<(), anyhow::Error> {
-    let dir = PathBuf::from("k8s-network-policy-ebpf-controller-ebpf/src");
+    let dir = PathBuf::from("networkpolicy-controller-ebpf/src");
     let names: Vec<&str> = vec!["ethhdr", "iphdr"];
     let bindings = btf_types::generate(Path::new("/sys/kernel/btf/vmlinux"), &names, true)?;
     // Write the bindings to the $OUT_DIR/bindings.rs file.

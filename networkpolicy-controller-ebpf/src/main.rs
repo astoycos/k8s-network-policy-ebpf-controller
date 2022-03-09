@@ -11,7 +11,7 @@ use aya_bpf::{
 
 use core::mem;
 use memoffset::offset_of;
-use k8s_network_policy_ebpf_controller_common::PacketLog;
+use networkpolicy_controller_common::PacketLog;
 
 mod bindings;
 use bindings::{ethhdr, iphdr};

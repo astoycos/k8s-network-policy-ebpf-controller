@@ -47,7 +47,7 @@ pub fn run(opts: Options) -> Result<(), anyhow::Error> {
         "bench" | "release" => "release",
         _ => opts.profile.as_str(),
     };
-    let bin_path = format!("target/{}/k8s-network-policy-ebpf-controller", target_dir);
+    let bin_path = format!("target/{}/networkpolicy-controller", target_dir);
 
     // arguments to pass to the application
     let mut run_args: Vec<_> = opts.run_args.iter().map(String::as_str).collect();

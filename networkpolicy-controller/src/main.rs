@@ -12,7 +12,7 @@ use std::{
 };
 use tokio::{signal, task};
 
-use k8s_network_policy_ebpf_controller_common::PacketLog;
+use networkpolicy_controller_common::PacketLog;
 
 #[tokio::main]
 async fn main() -> Result<(), anyhow::Error> {
